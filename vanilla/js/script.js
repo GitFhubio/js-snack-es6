@@ -32,15 +32,7 @@ for (var i = 1; i < bici.length; i++) {
    }
 }
 
-// oppure
-// var bicileggera;
-// for (var i = 0; i < bici.length-1; i++) {
-//    if (bici[i].peso>bici[i+1].peso){
-//     bicileggera=bici[i+1];
-//    }
-// }
-
-console.log(bicileggera);
+console.log('La bici leggera è quella '+bicileggera.nome);
 
 // SNACK2
 //
@@ -74,7 +66,7 @@ var squadre = [
 ];
 
 function RandomNumber(max,min){
-var Random=Math.floor(Math.random()*(max-min+1)-min);
+var Random=Math.floor(Math.random()*(max-min+1)+min);
 return Random;
 }
 
