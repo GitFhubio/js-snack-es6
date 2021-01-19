@@ -127,7 +127,7 @@ const squadreB=[];
 for (let i = 0; i < squadre.length; i++) {
   let oldTeam=squadre[i];
   let{nome,falli_subiti}=oldTeam;
-   // oldTeam.push({nome: nome,
+   // squadreB.push({nome: nome,
    // falli_subiti:falli_subiti});
    squadreB.push({nome,falli_subiti});
 
