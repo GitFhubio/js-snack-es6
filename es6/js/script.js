@@ -82,4 +82,5 @@ for (let i = 0; i < squadre.length; i++) {
 
 }
 console.log(squadre);
-// oppure
+
+// reference:https://medium.com/@seanmcp/js-basics-random-number-680fa269c4d7
