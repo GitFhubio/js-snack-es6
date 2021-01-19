@@ -7,20 +7,20 @@
 const bici=[
 
 {
-  'nome':'rossa',
-  'peso':10,
+  nome:'rossa',
+  peso:10,
 },
 {
-  'nome':'gialla',
-  'peso':7,
+  nome:'gialla',
+  peso:7,
 },
 {
-  'nome':'oro',
-  'peso':8,
+  nome:'oro',
+  peso:8,
 },
 {
-  'nome':'verde',
-  'peso':9,
+  nome:'verde',
+  peso:9,
 }
 
 ]
@@ -79,9 +79,10 @@ for (let i = 0; i < squadre.length; i++) {
      // squadre[i]['punti fatti']=RandomNumber(100);
      // squadre[i]['falli subiti']=RandomNumber(100);
 
+const arrayfinale=[];
 for (let i = 0; i <squadre.length; i++) {
-const{nome,puntifatti}=squadre[i];
-console.log(nome,puntifatti);
+const{nome,fallisubiti}=squadre[i];
+console.log(nome,fallisubiti);
 }
 
 // reference:https://medium.com/@seanmcp/js-basics-random-number-680fa269c4d7
