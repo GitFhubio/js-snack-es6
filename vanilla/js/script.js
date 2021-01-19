@@ -52,35 +52,47 @@ console.log(bicileggera);
 
 var squadre = [
   {
-    'nome': 'Inter',
-    'punti fatti': 0,
-    'falli subiti': 0
+    nome: 'Inter',
+    punti_fatti: 0,
+    falli_subiti: 0
   },
   {
-    'nome': 'Milan',
-    'punti fatti': 0,
-    'falli subiti': 0
+    nome: 'Milan',
+    punti_fatti: 0,
+    falli_subiti: 0
   },
   {
-    'nome': 'Juve',
-    'punti fatti': 0,
-    'falli subiti': 0
+    nome: 'Juve',
+    punti_fatti: 0,
+    falli_subiti: 0
   },
   {
-    'nome': 'Napoli',
-    'punti fatti': 0,
-    'falli subiti': 0
+    nome: 'Napoli',
+    punti_fatti: 0,
+    falli_subiti: 0
   }
 ];
 
-for (var i = 0; i < squadre.length; i++) {
-    squadre[i]['punti fatti']=Math.floor(Math.random()*100+1);
-    squadre[i]['falli subiti']=Math.floor(Math.random()*100+1);
+function RandomNumber(max,min){
+var Random=Math.floor(Math.random()*(max-min+1)-min);
+return Random;
 }
+
+for (var i = 0; i < squadre.length; i++) {
+  var thisTeam=squadre[i];
+    thisTeam.punti_fatti=RandomNumber(0,10);
+    thisTeam.falli_subiti=RandomNumber(1,10);
+}
+
+// creare nuovo array contenente tutti elementi del primo senza proprietà punti
 var squadreB=[];
 
 for (var i = 0; i < squadre.length; i++) {
-  squadreB.push(squadre[i]['nome']);
-  squadreB.push(squadre[i]['falli subiti']);
+  var oldTeam=squadre[i];
+   squadreB.push({nome:oldTeam.nome,
+   falli_subiti:oldTeam.falli_subiti});
+  //
+  // squadreB.push(squadre[i]['nome']);
+  // squadreB.push(squadre[i]['falli subiti']);
 }
 console.log(squadreB);
