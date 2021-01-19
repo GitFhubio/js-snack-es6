@@ -77,4 +77,10 @@ for (var i = 0; i < squadre.length; i++) {
     squadre[i]['punti fatti']=Math.floor(Math.random()*100+1);
     squadre[i]['falli subiti']=Math.floor(Math.random()*100+1);
 }
-console.log(squadre);
+var squadreB=[];
+
+for (var i = 0; i < squadre.length; i++) {
+  squadreB.push(squadre[i]['nome']);
+  squadreB.push(squadre[i]['falli subiti']);
+}
+console.log(squadreB);
