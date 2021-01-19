@@ -47,40 +47,41 @@ console.log(`La bici leggera è quella ${bicileggera.nome}`);
 // Generare numeri random al posto degli 0 nelle proprietà: Punti fatti e falli subiti
 // Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 
-
 const squadre = [
   {
-    'nome': 'Inter',
-    'punti fatti': 0,
-    'falli subiti': 0
+    nome: 'Inter',
+    puntifatti: 0,
+    fallisubiti: 0
   },
   {
-    'nome': 'Milan',
-    'punti fatti': 0,
-    'falli subiti': 0
+    nome: 'Milan',
+    puntifatti: 0,
+    fallisubiti: 0
   },
   {
-    'nome': 'Juve',
-    'punti fatti': 0,
-    'falli subiti': 0
+    nome: 'Juve',
+    puntifatti: 0,
+    fallisubiti: 0
   },
   {
-    'nome': 'Napoli',
-    'punti fatti': 0,
-    'falli subiti': 0
+    nome: 'Napoli',
+    puntifatti: 0,
+    fallisubiti: 0
   }
 ];
 // le arrow functions le vedremo domani vabbè
 // const RandomNumber = (base) => Math.floor(Math.random() * base) + 1;
 for (let i = 0; i < squadre.length; i++) {
-    squadre[i]['punti fatti']=Math.floor(Math.random()*100+1);
-    squadre[i]['falli subiti']=Math.floor(Math.random()*100+1);
+    squadre[i].puntifatti=Math.floor(Math.random()*100+1);
+    squadre[i].fallisubiti=Math.floor(Math.random()*100+1);
+  }
      //
      // squadre[i]['punti fatti']=RandomNumber(100);
      // squadre[i]['falli subiti']=RandomNumber(100);
 
-
+for (let i = 0; i <squadre.length; i++) {
+const{nome,puntifatti}=squadre[i];
+console.log(nome,puntifatti);
 }
-console.log(squadre);
 
 // reference:https://medium.com/@seanmcp/js-basics-random-number-680fa269c4d7
