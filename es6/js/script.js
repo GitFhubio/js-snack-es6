@@ -79,7 +79,6 @@ for (let i = 0; i < squadre.length; i++) {
      // squadre[i]['punti fatti']=RandomNumber(100);
      // squadre[i]['falli subiti']=RandomNumber(100);
 
-const arrayfinale=[];
 for (let i = 0; i <squadre.length; i++) {
 const{nome,fallisubiti}=squadre[i];
 console.log(nome,fallisubiti);
