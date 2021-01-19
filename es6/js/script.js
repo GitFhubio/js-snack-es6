@@ -116,17 +116,15 @@ return Math.floor(Math.random()*(max-min+1)+min);
 }
 
 for (let i = 0; i < squadre.length; i++) {
-  let thisTeam=squadre[i];
-    thisTeam.punti_fatti=RandomNumber(0,10);
-    thisTeam.falli_subiti=RandomNumber(1,10);
+    squadre[i].punti_fatti=RandomNumber(0,10);
+    squadre[i].falli_subiti=RandomNumber(1,10);
 }
 
 // creare nuovo array contenente tutti elementi del primo senza proprietà punti
 const squadreB=[];
 
 for (let i = 0; i < squadre.length; i++) {
-  let oldTeam=squadre[i];
-  let{nome,falli_subiti}=oldTeam;
+  let{nome,falli_subiti}=squadre[i];
    // squadreB.push({nome: nome,
    // falli_subiti:falli_subiti});
    squadreB.push({nome,falli_subiti});
