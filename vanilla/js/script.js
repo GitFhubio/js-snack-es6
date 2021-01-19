@@ -40,8 +40,6 @@ for (var i = 0; i < bici.length; i++) {
 //    }
 // }
 
-// sulla seconda ho dubbi
-
 console.log(bicileggera);
 
 
