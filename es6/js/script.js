@@ -33,7 +33,7 @@ for (let i = 1; i < bici.length; i++) {
 }
 
 
-console.log(bicileggera);
+console.log(`La bici leggera è quella ${bicileggera.nome}`);
 
 
 // SNACK2
