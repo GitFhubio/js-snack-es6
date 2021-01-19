@@ -32,8 +32,9 @@ for (let i = 1; i < bici.length; i++) {
    }
 }
 
+const{nome,peso}=bicileggera;
 
-console.log(`La bici leggera è quella ${bicileggera.nome}`);
+console.log(`La bici leggera è quella ${nome} che ha peso ${peso}`);
 
 
 // SNACK2
