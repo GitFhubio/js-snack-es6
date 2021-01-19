@@ -76,8 +76,8 @@ for (let i = 0; i < squadre.length; i++) {
     squadre[i].fallisubiti=Math.floor(Math.random()*100+1);
   }
      //
-     // squadre[i]['punti fatti']=RandomNumber(100);
-     // squadre[i]['falli subiti']=RandomNumber(100);
+     // squadre[i].puntifatti=RandomNumber(100);
+     // squadre[i].fallisubiti=RandomNumber(100);
 
 for (let i = 0; i <squadre.length; i++) {
 const{nome,fallisubiti}=squadre[i];
