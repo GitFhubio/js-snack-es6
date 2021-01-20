@@ -5,10 +5,7 @@
 let minimo;
 let massimo;
 const arr1=['giacomo','peppe','filippo','antonio','giovanni'];
-
-
  let input1=parseInt(prompt('Inserisci primo valore'));
-
  let input2=parseInt(prompt('Inserisci secondo valore'));
 
 if(input2<input1){
@@ -29,5 +26,4 @@ const FilteredArray=array.filter((element,index,array)=>{
 return FilteredArray;
 }
 
-const arr=traIndici(2,5,[1,2,4,88,67,3,7,5,4]);
-console.log(arr);
+console.log(traIndici(minimo,massimo,['giacomo','peppe','filippo','antonio','giovanni']));

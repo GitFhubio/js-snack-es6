@@ -5,9 +5,7 @@
 var minimo;
 var massimo;
 var arr1=['giacomo','peppe','filippo','antonio','giovanni'];
-
  var input1=parseInt(prompt('Inserisci primo valore'))}
-
  var input2=parseInt(prompt('Inserisci secondo valore'));
 
 if(input2<input1){
@@ -29,5 +27,4 @@ while(min<=max)
 return arr2;
 }
 
-var arr2=traIndici(minimo,massimo,arr1);
-console.log(arr2);
+console.log(traIndici(minimo,massimo,arr1));
