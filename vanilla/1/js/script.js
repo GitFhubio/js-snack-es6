@@ -71,18 +71,16 @@ return Random;
 }
 
 for (var i = 0; i < squadre.length; i++) {
-  var thisTeam=squadre[i];
-    thisTeam.punti_fatti=RandomNumber(0,10);
-    thisTeam.falli_subiti=RandomNumber(1,10);
+    squadre[i].punti_fatti=RandomNumber(0,10);
+    squadre[i].falli_subiti=RandomNumber(1,10);
 }
 
 // creare nuovo array contenente tutti elementi del primo senza proprietà punti
 var squadreB=[];
 
 for (var i = 0; i < squadre.length; i++) {
-  var oldTeam=squadre[i];
-   squadreB.push({nome:oldTeam.nome,
-   falli_subiti:oldTeam.falli_subiti});
+   squadreB.push({nome:squadre[i].nome,
+   falli_subiti:squadre[i].falli_subiti});
   //
   // squadreB.push(squadre[i]['nome']);
   // squadreB.push(squadre[i]['falli subiti']);
