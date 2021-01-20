@@ -9,11 +9,9 @@ while(min<max-1) //mi riporto al caso umano con indici esclusi
 {
    arrayFinale.push(arrayIniziale[min]);
    min++;
-
 }
 return arrayFinale;
 }
 
-
-var arr=traIndici(2,5,[3,4,5,7,3,6,8]);
+var arr=traIndici(2,5,[1,2,4,5,6,3,7,5,4]);
 console.log(arr);
