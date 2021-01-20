@@ -3,15 +3,13 @@
 // La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra i due numeri
 
 var arr1=['giacomo','peppe','filippo','antonio','giovanni','alfredo','archimede'];
-var minimo=-1;
-var massimo=-1;
-while(minimo<0 || minimo>=arr1.length){
-minimo=parseInt(prompt('Inserisci minimo'));
+while(isNaN(minimo) || minimo<0 || minimo>=arr1.length){
+var minimo=parseInt(prompt('Inserisci minimo'));
 if (minimo<0 || minimo>=arr1.length){
   alert('Devi inserire un valore tra 0 e'+(arr1.length-1))
 }
 }
-while(massimo<=minimo || massimo>=arr1.length){
+while(isNaN(massimo) || massimo<=minimo || massimo>=arr1.length){
  var massimo=parseInt(prompt('Inserisci massimo'));
  if (massimo<0 || massimo>=arr1.length){
    alert('Devi inserire un valore tra '+minimo+' e'+(arr1.length-1));
