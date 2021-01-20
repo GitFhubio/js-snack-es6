@@ -2,18 +2,27 @@
 // Si scriva una funzione che accetti tre argomenti, un array e due numeri (A più piccolo di B).
 // La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra i due numeri
 
-var arr1=['giacomo','peppe','filippo','antonio','giovanni','alfredo','archimede'];
+var arr1=['giacomo','peppe','filippo','antonio','giovanni','alfredo','archimede','benedetto','matteo'];
 while(isNaN(minimo) || minimo<0 || minimo>=arr1.length){
 var minimo=parseInt(prompt('Inserisci minimo'));
 if (minimo<0 || minimo>=arr1.length){
-  alert('Devi inserire un valore tra 0 e'+(arr1.length-1))
+  alert('Devi inserire un valore tra 0 e '+(arr1.length-1))
+}
+if (isNaN(minimo)){
+  alert('Devi inserire un numero')
 }
 }
 while(isNaN(massimo) || massimo<=minimo || massimo>=arr1.length){
  var massimo=parseInt(prompt('Inserisci massimo'));
  if (massimo<0 || massimo>=arr1.length){
-   alert('Devi inserire un valore tra '+minimo+' e'+(arr1.length-1));
+   alert('Devi inserire un valore tra '+minimo+' e '+(arr1.length-1));
  }
+if(massimo==minimo){
+  alert('Il massimo non può coincidere col minimo');
+}
+if(isNaN(massimo)){
+  alert('Devi inserire un numero');
+}
 }
 
 function traIndici(min,max,arrayIniziale)

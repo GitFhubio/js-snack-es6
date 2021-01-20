@@ -3,19 +3,28 @@
 // La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra i due numeri
 
 
-const arr1=['giacomo','peppe','filippo','antonio','giovanni'];
+const arr1=['giacomo','peppe','filippo','antonio','giovanni','alfonso','piero','matteo'];
 let input1;
 let input2;
 while(isNaN(input1) || input1<0 || input1>arr1.length){
 input1=parseInt(prompt('Inserisci minimo'));
 if (isNaN(input1) || input1<0 || input1>=arr1.length){
-  alert('Devi inserire un valore tra 0 e'+(arr1.length-1))
+  alert('Devi inserire un valore tra 0 e '+(arr1.length-1))
+}
+if(isNaN(input1)){
+  alert('Devi inserire un numero');
 }
 }
 while(isNaN(input2) || input2<=input1 || input2>=arr1.length){
 input2=parseInt(prompt('Inserisci massimo'));
 if (input2<0 || input2>=arr1.length){
-  alert('Devi inserire un valore tra '+input1+' e'+(arr1.length-1))
+  alert('Devi inserire un valore tra '+input1+' e '+(arr1.length-1))
+}
+if(input2==input1){
+  alert('Il massimo non può coincidere col minimo');
+}
+if(isNaN(input2)){
+  alert('Devi inserire un numero');
 }
 }
 function traIndici(min,max,array){
