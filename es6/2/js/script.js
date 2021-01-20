@@ -4,20 +4,19 @@
 
 
 const arr1=['giacomo','peppe','filippo','antonio','giovanni'];
-let input1=-1;
-let input2=-1;
-while(input1<0 || input1>arr1.length){
+let input1;
+let input2;
+while(isNaN(input1) || input1<0 || input1>arr1.length){
 input1=parseInt(prompt('Inserisci minimo'));
-if (input1<0 || input1>=arr1.length){
+if (isNaN(input1) || input1<0 || input1>=arr1.length){
   alert('Devi inserire un valore tra 0 e'+(arr1.length-1))
 }
 }
-while(input2<=input1 || input2>=arr1.length){
+while(isNaN(input2) || input2<=input1 || input2>=arr1.length){
 input2=parseInt(prompt('Inserisci massimo'));
 if (input2<0 || input2>=arr1.length){
   alert('Devi inserire un valore tra '+input1+' e'+(arr1.length-1))
 }
-
 }
 function traIndici(min,max,array){
 const FilteredArray=array.filter((element,index,array)=>{
