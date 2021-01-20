@@ -5,11 +5,11 @@
 function TraIndici(min,max,array){
 
 const FilteredArray=array.filter((element,index,array)=>{
-  return index<max-1 && index>=min;
+  return index<=max && index>=min;
 });
 
 return FilteredArray;
 }
 
-const arr=TraIndici(2,5,[1,2,4,5,6,3,7,5,4]);
+const arr=TraIndici(2,5,[1,2,4,88,67,3,7,5,4]);
 console.log(arr);

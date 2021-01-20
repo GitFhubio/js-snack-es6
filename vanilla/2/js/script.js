@@ -5,7 +5,7 @@
 function traIndici(min,max,arrayIniziale)
 {
 var arrayFinale=[];
-while(min<max-1) //mi riporto al caso umano con indici esclusi
+while(min<=max) //mi riporto al caso umano con indici esclusi
 {
    arrayFinale.push(arrayIniziale[min]);
    min++;
